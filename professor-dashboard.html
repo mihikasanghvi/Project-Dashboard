@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Professor Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
+	<script src="dashboard.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to Professor Dashboard</h1>
+		<h2>View Projects</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Project Title</th>
+					<th>Department</th>
+					<th>Description</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- PHP code to fetch and display projects from the database -->
+				<?php
+					// Database connection code
+					// Query to fetch projects from the database
+					// Loop to display projects in the table rows
+				?>
+			</tbody>
+		</table>
+		<h2>Post New Project</h2>
+		<form method="post" action="add_project.php">
+			<label for="title">Project Title:</label>
+			<input type="text" name="title" required>
+
+			<label for="department">Department:</label>
+			<select name="department" required>
+				<option value="">--Select Department--</option>
+				<option value="Computer Science">Computer Science</option>
+				<option value="Electrical Engineering">Electrical Engineering</option>
+				<option value="Mechanical Engineering">Mechanical Engineering</option>
+				<!-- Add more options as needed -->
+			</select>
+
+			<label for="description">Project Description:</label>
+			<textarea name="description" required></textarea>
+
+			<button type="submit" name="add_project" value="add_project">Submit Project</button>
+		</form>
+		<h2>View Applications</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Student Name</th>
+					<th>Project Title</th>
+					<th>Resume</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- PHP code to fetch and display applications from the database -->
+				<?php
+					// Database connection code
+					// Query to fetch applications from the database
+					// Loop to display applications in the table rows
+				?>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

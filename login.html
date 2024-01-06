@@ -1,0 +1,95 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="user-authentication.js"></script>
+</head>
+<body>
+	<div class="login-box">
+		<h2>Login</h2>
+		<form action="login.php" method="post" onsubmit="return validateLogin()">
+			<div class="user-box">
+				<input type="text" name="email" required="">
+				<label>Username</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="password" required="">
+				<label>Password</label>
+			</div>
+			<input type="submit" name="login" value="login">
+		</form>
+		<a href="signup.html">Don't have an account? Sign Up</a>
+	</div>
+</body>
+
+<script>
+	// Check if user is logged in and redirect to dashboard
+	if (localStorage.getItem('loggedIn') === 'true') {
+	  window.location.href = 'professor-dashboard.html';
+	}
+</script>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+	<script type="text/javascript" src="user-authentication.js"></script>
+
+</head>
+
+<body class="login">
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<h1>Welcome to ProCollab</h1>
+				<p>Our aim is to To encourage Research and Development and let them explore the vast field of their
+					interest. </p>
+				<span>
+					<p>login with social media</p>
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+
+				</span>
+			</div>
+		</div>
+		<form action="login.php" method="post" onsubmit="return validateLogin()">
+		<div class="right">
+			<h5>Login</h5>
+			<p>Don't have an account? <a href="signup.html">Create Your Account</a> it takes less than a minute</p>
+			<div class="inputs">
+				<input type="text" name="email" placeholder="email" required="">
+				<br>
+				<input type="password" name="password" placeholder="password" required="">
+			</div>
+
+			<br><br>
+			
+
+			<br>
+			<button type="submit" name="login" value="login" >Login</button>
+		</div>
+		</form>
+
+	</div>
+
+
+</body>
+<script>
+	// Check if user is logged in and redirect to dashboard
+	if (localStorage.getItem('loggedIn') === 'true') {
+	  window.location.href = 'professor-dashboard.html';
+	}
+</script>
+</html>
